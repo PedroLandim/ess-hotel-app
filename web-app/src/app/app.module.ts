@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -19,6 +19,7 @@ import { HotelCardComponent } from './components/hotel-card/hotel-card.component
 import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 
 @NgModule({
+  schemas:[CUSTOM_ELEMENTS_SCHEMA],
   declarations: [
     AppComponent,
     NavbarComponent,
