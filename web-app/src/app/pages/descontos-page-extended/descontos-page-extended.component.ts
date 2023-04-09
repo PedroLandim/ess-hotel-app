@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
-
+import { Component, Input, OnInit} from '@angular/core';
+import { Router } from '@angular/router';
+import { Discounttype } from 'src/app/discount.service';
 @Component({
   selector: 'app-descontos-page-extended',
   templateUrl: './descontos-page-extended.component.html',
@@ -10,4 +11,8 @@ export class DescontosPageExtendedComponent {
   @Input() location!: string;
   @Input() price!: string;
   @Input() imageUrl!: string;
+
+  ngOnInit(): void{
+    
+  }
 }

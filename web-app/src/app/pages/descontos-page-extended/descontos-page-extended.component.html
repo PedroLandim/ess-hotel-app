@@ -8,16 +8,13 @@
     <div class="background">
     <div class="containergeral">
         <div class="card1">
-        <app-hotel-card
+        <app-hotel-card *ngfor='let imageUrl for imageUrl'
         hotelName="Hotel A"
         location="New York, NYC"
         price = "$$$"
         imageUrl="https://via.placeholder.com/600x400.png?text=Hotel+A">
         </app-hotel-card>
-        </div>
-
-   
-    
+        </div>    
         <div class="card2">
         <app-hotel-card
         hotelName="Hotel B"
