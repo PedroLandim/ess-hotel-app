@@ -6,6 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var express_1 = __importDefault(require("express"));
 var reviews_routes_1 = __importDefault(require("./src/routes/reviews.routes"));
 var discount_routes_1 = __importDefault(require("./src/routes/discount.routes"));
+var atracoes_routes_1 = __importDefault(require("./src/routes/atracoes.routes"));
 //import fs from 'fs';
 var app = (0, express_1.default)();
 var port = 3000;
@@ -21,6 +22,7 @@ app.use(express_1.default.json());
 // link das rotas pro backend
 app.use('/reviews', reviews_routes_1.default);
 app.use('/discounts', discount_routes_1.default);
+app.use('/atracoes', atracoes_routes_1.default);
 app.get('/', function (req, res, next) {
     res.send('Express + TypeScript Server');
 });
