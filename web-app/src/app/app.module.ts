@@ -1,5 +1,7 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+// formsModule e reactiveFormsModule para envio de formulario pelo angular
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,8 +19,8 @@ import { UserEvaluationComponent } from './components/user-evaluation/user-evalu
 import { DescontosPageExtendedComponent } from './pages/descontos-page-extended/descontos-page-extended.component';
 import { HotelCardComponent } from './components/hotel-card/hotel-card.component';
 import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
-import { HttpClientModule } from '@angular/common/http'
-
+import { HttpClientModule } from '@angular/common/http'; 
+import { PagamentosPageComponent } from './pages/pagamentos-page/pagamentos-page.component';
 @NgModule({
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
   declarations: [
@@ -34,9 +36,13 @@ import { HttpClientModule } from '@angular/common/http'
     UserEvaluationComponent,
     DescontosPageExtendedComponent,
     HotelCardComponent,
+    PagamentosPageComponent,
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
