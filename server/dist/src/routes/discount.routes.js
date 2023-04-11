@@ -12,7 +12,7 @@ discount.route('/')
 });
 discount.route('/:id')
     .get(function (req, res) {
-    // rota que retorna todos descontos de uma atracao especifica selecionada por id
+    // rota que retorna o valor de um desconto específico, selecionada por id
     var id = Number(req.params.id);
 }).post(function (req, res) {
     // rota para criar novos descontos
