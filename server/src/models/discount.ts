@@ -1,10 +1,10 @@
 export class Discount{
     titulo!: string
     text!: string
-    price!: number
+    price!: string
     imageUrl!: string
 
-    constructor(titulo: string, text: string, price: number, imageUrl: string){
+    constructor(titulo: string, text: string, price: string, imageUrl: string){
         this.titulo = titulo
         this.text = text
         this.price = price

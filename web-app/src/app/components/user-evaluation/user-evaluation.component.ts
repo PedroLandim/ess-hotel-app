@@ -64,5 +64,4 @@ export class UserEvaluationComponent implements OnInit {
       this.reviews = data.allReviews;
     });
   }
-
 }
